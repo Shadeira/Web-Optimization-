@@ -23,14 +23,7 @@ To view the pizza website download all of the files and open index.html in your 
 
 index.html renders at least 90 fps
 
--Reduced Pizza Elements
-(main.js) - 529
-Reduced the amount of sliding pizza elements generated from 200 down to 31, which still sufficiently fills the screen with sliding pizzas.
- 
- 
--Improved Efficiency
-(main.js) - 505
-Moved the calculation which utilizes the scrollTop method outside of the loop.
+
 
 -Reduced Browser Paint Events
 (main.js) - 533,534
