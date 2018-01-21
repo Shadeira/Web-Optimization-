@@ -493,12 +493,13 @@ function updatePositions() {
   var intViewportWidth = window.innerWidth / 2;
   var phase = [];
   var sway = 0;
-  for (var i = 0; i < 5; i++) {
-    phase[i] = Math.sin((scrollTop / 1250) + i);
-  }
   for (var i = 0; i < items.length; i++) {
+    phase[i] = Math.sin((scrollTop / 1250) + i);
     items[i].style.left = items[i].basicLeft + 100 * phase[i%5] + 'px';
   }
+  //for (var s = 0; s < items.length; s++) {
+  //  items[s].style.left = items[s].basicLeft + 100 * phase[s%5] + 'px';
+  //}
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
   // Super easy to create custom metrics.
